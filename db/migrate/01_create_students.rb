@@ -4,12 +4,6 @@ def change
   create_table :students do |t|
     t.string :name
     
-    sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS students (
-  name TEXT)
-SQL
- 
-ActiveRecord::Migration.connection.execute(sql)
 end  
 
 end
