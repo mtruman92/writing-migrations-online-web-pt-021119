@@ -9,7 +9,7 @@ def change
   name TEXT)
 SQL
  
-ActiveRecord::Base.connection.execute(sql)
+ActiveRecord::Migration.connection.execute(sql)
 end  
 
 end
